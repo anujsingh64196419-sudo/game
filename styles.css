@@ -1,0 +1,66 @@
+:root{
+  --bg:#0f1724;
+  --accent:#06b6d4;
+  --muted:#94a3b8;
+  --panel:#071023;
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+body{
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background: linear-gradient(180deg, #031024, #071428);
+  color:#cbd5e1;
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:24px;
+}
+
+.game-container{
+  width:860px;
+  max-width:100%;
+  text-align:center;
+}
+
+h1{
+  margin-bottom:12px;
+  font-size:20px;
+  color:var(--accent);
+  letter-spacing:1px;
+}
+
+.scoreboard{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:20px;
+  margin-bottom:8px;
+  color:var(--muted);
+}
+
+.score{
+  font-size:28px;
+  width:60px;
+  background:rgba(255,255,255,0.03);
+  border-radius:8px;
+  padding:8px 12px;
+  color:#e6eef5;
+}
+
+.vs{font-size:20px;color:var(--muted)}
+
+canvas{
+  display:block;
+  margin:8px auto;
+  background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  border:1px solid rgba(255,255,255,0.03);
+  box-shadow: 0 8px 30px rgba(2,6,23,0.6);
+  border-radius:6px;
+}
+
+.controls{
+  margin-top:10px;
+  color:var(--muted);
+  font-size:13px;
+}
